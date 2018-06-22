@@ -1,0 +1,5 @@
+FROM eosc-docker-hub.desy.de:443/reppinjo/jupyterhub-centos-nfs:0.6
+# which will be used when starting the application.
+ADD jupyterhub_config.py /srv/jupyterhub/jupyterhub_config.py
+
+COPY ./adminlist /srv/jupyterhub/adminlist
